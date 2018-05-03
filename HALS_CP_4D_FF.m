@@ -29,7 +29,7 @@ for k = 1:MCRuns
     elapsed_time = toc;
     
     
-    [Ct,At,Bt] = hals_nmode_ff(Yt,Xt,Cr.U,Ar.U,Br.U,JC,JI,4,alpha,MaxIter,1);
+    [Ct,At,Bt] = hals_nmode_ff(Yt,Xt,CU,AU,BU,JC,JI,4,alpha,MaxIter,1);
     CAt = [Ct{4} At{4}];
     CBt = [Ct{4} Bt{4}];
     Dt = [At{4} Bt{4}];

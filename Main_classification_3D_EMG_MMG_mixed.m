@@ -5,12 +5,6 @@
 Sx = load([pwd '\dane\osoba_1_full.mat']);
 Xraw = Sx.osoba_1;
 
-% Sx = load([pwd '\dane\osoba_4_full.mat']);
-% Xraw = Sx.osoba_4;
-% 
-% Sx = load([pwd '\dane\5x200.mat']);
-% Xraw = Sx.osoba_3_ok;
-
 disp(['Loading passed successfuly']);
 
 % Transformation to 4D tensor of spectrograms
@@ -31,8 +25,8 @@ NoCV = 5; % number of CV-folds
 MCRuns = 10; % MC runs
 MaxIter = 20; % number of iterations (iterative methods)
 J = 20; % number of latent components
-Jt = [20 20 20]; % Rzêdy J_k dla k = 1, ..,3
-Jtc = [30 30 30]; % Rzêdy J_k dla k = 1, ..,3
+Jt = [20 20 20]; % Rz?dy J_k dla k = 1, ..,3
+Jtc = [30 30 30]; % Rz?dy J_k dla k = 1, ..,3
 visualization = 1;
 
 ET = zeros(NoCV,6);
